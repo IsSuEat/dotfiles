@@ -4,7 +4,7 @@ PROMPT_COMMAND='DIR=`pwd|sed -e "s!$HOME!~!"`; if [ ${#DIR} -gt 30 ]; then CurDi
 PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
 alias update='apacman -Syu'
 alias wget='wget -c $1'
-GOPATH=~/projects/go
+export GOPATH=~/projects/go
 
 # Extract Stuff
 extract () {
