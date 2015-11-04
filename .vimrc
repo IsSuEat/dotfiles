@@ -8,9 +8,12 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'fatih/vim-go'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
 
 call vundle#end()                       " required
-
 
 syntax on
 filetype plugin on
@@ -54,3 +57,7 @@ set cmdheight=1
 
 " Allows writing to files with root priviledges
 cmap w!! w !sudo tee % > /dev/null
+
+" YCM settings
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_min_num_of_chars_for_completion = 1
