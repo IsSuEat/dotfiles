@@ -12,6 +12,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
 Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'hdima/python-syntax'
+Plugin 'chase/vim-ansible-yaml'
 
 call vundle#end()                       " required
 
@@ -21,10 +23,10 @@ filetype indent on
 colorscheme  molokai
 
 set ttyfast                             " don't lag…
-set nowrap                              " don't wrap lines
+"set nowrap                              " don't wrap lines
 set splitbelow                          " place new files below the current
 set showmatch                           " matching brackets & the like
-set clipboard+=unnamed                  " yank and copy to X clipboard
+set clipboard=unnamedplus                  " yank and copy to X clipboard
 set encoding=utf-8                      " UTF-8 encoding for all new files
 set backspace=2                         " full backspacing capabilities (indent,eol,start)
 set scrolloff=10                        " keep 10 lines of context
